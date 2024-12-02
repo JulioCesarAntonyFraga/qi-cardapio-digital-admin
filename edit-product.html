@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./public/food-makers-high-resolution-logo-transparent.png">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/edit-product.css">
+    <title>Food Makers Admin - Edit</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div id="nav-logo">
+                <a href="./product-list.html">
+                    <img src="./public/food-makers-high-resolution-logo-transparent.png" alt="Logo Food Makers">
+                </a>
+            </div>
+        </div> 
+        <div class="product">
+            <div class="image-list-container">
+                <div class="image-list">
+                    <div class="image-card" style="cursor: pointer;">
+                        <img class="image-card-image" src="./public/add.png" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                    <div class="image-card">
+                        <img class="image-card-delete" src="./public/bin.png" alt="">
+                        <img class="image-card-image" src="https://placehold.co/600x600" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product-form">
+                <form class="product-form-inputs">
+                    <label for="name">Nome *</label>
+                    <input type="text" id="name-field" placeholder="Nome">
+                    <label for="price">Preço *</label>
+                    <input type="number" id="price-field" placeholder="R$ 99,99">
+                    <label for="description">Descrição</label>
+                    <textarea name="description" id="description-field"></textarea>
+                    <label for="paymentMethod">Método De Pagamento *</label>
+                    <select name="category" id="category-field">
+                        <option value="0">Lanche</option>
+                        <option value="1">Bebida</option>
+                    </select>
+                    <div class="form-actions">
+                        <button type="button" class="save-button" onclick="formIsValid(this) ? window.location.href = 'product-list.html' : null">Salvar</button>
+                        <button type="button" class="delete-button" onclick="window.confirm('Você tem certeza que deseja remover este produto?') ? window.location.href = 'product-list.html' : null">Deletar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/edit-product.js"></script>
+</body>
+</html>
